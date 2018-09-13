@@ -16,4 +16,6 @@ public interface UserMapper {
 
 	void delete(Long id);
 
+	String home();
+
 }

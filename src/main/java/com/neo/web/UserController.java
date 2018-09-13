@@ -26,6 +26,11 @@ public class UserController {
 	@Resource
 	private UserMapper userMapper;
 
+    @RequestMapping("/")
+    public String home(){
+        return "index";
+    }
+
     /**
      * 查询所有用户
      * @return

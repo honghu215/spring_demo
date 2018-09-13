@@ -1,0 +1,20 @@
+spring:
+  mybatis:
+    config-locations: classpath:mybatis/mybatis-config.xml
+    mapper-locations: classpath:mybatis/mapper/*.xml
+    type-aliases-package: com.neo.entity
+
+
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://financialanalyzing.c1xgykb7az0r.us-east-1.rds.amazonaws.com/demo
+    username: financial
+    password: clientserver
+
+  thymeleaf:
+      suffix: .html
+      prefix: classpath*:/templates/
+      encoding: utf-8
+      cache: false
+      check-template-location: true
+      mode: HTML5
